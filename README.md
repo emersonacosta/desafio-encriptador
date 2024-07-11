@@ -2,7 +2,6 @@
 
 ![image](https://github.com/user-attachments/assets/540fc703-eef8-4d4c-ae72-f55dbf9486b2)
 
-## Estado del proyecto: En construcción
 ## Desarrollador: Emerson Acosta Mulato
 
 ![7 FOTO FONDO AZUL](https://github.com/user-attachments/assets/412f174c-8ae8-4cd7-a397-d3af51ee6a72)
@@ -17,7 +16,7 @@
 - `CSS`
 - `JS`
 
-## 🛠️ Abre y ejecuta el proyecto
+## Estado del proyecto: En construcción
 
    
 
