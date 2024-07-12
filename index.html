@@ -10,30 +10,17 @@
     <link rel="stylesheet" href="style.css">
     <title>Encriptador de Texto</title>
 </head>
-<body>
-    
-    <div class="container">
-        <div class="container__contenido">
-            <div class="container__informaciones">
-                <div class="container__texto">
-                    <h1></h1>
-                    <p class="texto__parrafo"></p>
-                </div>
-                <input type="text" id="valorUsuario"  placeholder="Ingrese el texto aqui" class="container__input">
-                <div class="chute container__botones">
-                    <button onclick="verificarIntento();" class="container__boton1">!Encriptar</button>
-                    <button onclick="verificarIntento();" class="container__boton2">!Desencriptar</button>                    
-                </div>
-            </div>
-                       
+<body>    
+    <div class="container">        
+        <div class="container_texto">                
+            <input type="text" id="valorUsuario"  placeholder="Ingrese el texto aqui" class="container_input">        
+            <button  class="container__boton1">!Encriptar</button>
+            <button  class="container__boton2">!Desencriptar</button>
         </div>
+        <div class="container_imagen">        
+            <img src="./img/Muñeco.png" alt="Un muñeco con una lupa" class="container__imagen-persona" />    
+        </div>                
     </div>
-
-    <div class="container_imagen">        
-        <img src="./img/Muñeco.png" alt="Un muñeco con una lupa" class="container__imagen-persona" />    
-    </div> 
-
-    <script src="app.js"></script>
-    
+    <script src="app.js"></script>    
 </body>
 </html>
