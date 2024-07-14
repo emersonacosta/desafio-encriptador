@@ -6,53 +6,82 @@
 }
 
 body {
-    background-color: #F3F5FC;      
-}
-
-
-.container {
-    width: 90%;
-    margin: 30px;    
-    display: flex;    
-    justify-content: space-between;   
-}
-
-.container_texto{
-    width: 60%;
+    display: flex;
     justify-content: center;
     align-items: center;
-            
+    height: 100vh;
+    margin: 0;
+    background-color: #0A3871;
 }
 
-.container__boton1 {
+.container {
+    
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    background-color: #F3F5FC;  
+    
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: 128px;
+    
+    
+}
+
+input[type="text"] {
+    margin-bottom: 40px;
+    width: 577px;
+    height: 48px;
+    border: none;
+    background: #FFFFFF;
+    color: #0A3871;
+    font-size: 32px;    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+input[type="text"]::placeholder {
+    color: #0A3871;
+}
+
+.parrafo{
+    color: black;
+    
+}
+
+.buttons {
+    display: flex; 
+    gap: 20px;      
+}
+
+.boton1 {    
     border-radius: 24px;
-    background: #0A3871;
-    padding: 16px 24px;
+    background: #0A3871;    
     width: 328px;
     height: 67px;
     font-size: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #FFFFFF;    
-    border: 1px;
-    
+    border: 1px;    
 }
 
-.container__boton2 {
+
+.boton2 {   
     border-radius: 24px;
-    background: #D8DFE8;
-    padding: 16px 24px;
+    background: #D8DFE8;    
     width: 328px;
-    height: 67px;    
+    height: 67px;
     font-size: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #0A3871;
-    border: 2em;
-    border-color: #0A3871;
-    margin-top: 2rem;
+    color: #0A3871;    
+    border: solid #0A3871 1px;      
 }
 
-
-.container_imagen{
+.right-column {
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -60,58 +89,13 @@ body {
     height: 908px;
     background-color:  #FFFFFF;
     border-radius: 32px;
-
+    
 }
 
-.container__imagen-persona{
+.right-column img {
     width: 336px;
     height: 304px;
     background-color:  white;
     display: flex;
     align-items: center;
-
-}
-
-.container__boton:disabled {
-    background: #898989;
-}
-
-.container__texto {
-    margin: 16px 0 16px 0;
-}
-
-.container__texto-azul {
-    color: #1875E8;
-}
-
-.container_input {
-    width: 100%;
-    height: 72px;
-    border: none;
-    background: none;
-    color: #0A3871;
-    padding: 2rem;
-    font-size: 32px;    
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-.container__botones {
-    display: flex;
-    gap: 2em;
-}
-
-h1 {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
-    padding-bottom: 3rem;
-}
-
-p,
-button {
-    font-family: 'Inter', sans-serif;
-}
-
-.texto__parrafo {
-    font-size: 32px;
-    font-weight: 400;
 }
