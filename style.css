@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #0A3871;
+    background-color: #F3F5FC;
 }
 
 .container {
@@ -38,14 +40,15 @@ input[type="text"] {
     width: 577px;
     height: 48px;
     border: none;
-    background: #FFFFFF;
+    background: #F3F5FC;
     color: #0A3871;
     font-size: 32px;    
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'inter', 'sans-serif';
 }
 
 input[type="text"]::placeholder {
     color: #0A3871;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .parrafo{
@@ -64,8 +67,7 @@ input[type="text"]::placeholder {
     width: 328px;
     height: 67px;
     font-size: 16px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #FFFFFF;    
+    font-family: 'inter', 'sans-serif';
     border: 1px;    
 }
 
@@ -76,20 +78,39 @@ input[type="text"]::placeholder {
     width: 328px;
     height: 67px;
     font-size: 16px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'inter', 'sans-serif';
     color: #0A3871;    
     border: solid #0A3871 1px;      
 }
 
 .right-column {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;    
     width: 400px;
     height: 908px;
     background-color:  #FFFFFF;
     border-radius: 32px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     
+    
+}
+
+h1{    
+    text-align: center;
+    font-size: bold  24px;
+    font-family: 'inter', 'sans-serif';
+    color: #343A40;
+    font-weight: auto;    
+}
+
+h2{    
+    text-align: center;
+    font-size:   16px;
+    font-family: 'inter', 'sans-serif';
+    color: #495057;
+    font-weight: auto;    
 }
 
 .right-column img {
@@ -98,4 +119,5 @@ input[type="text"]::placeholder {
     background-color:  white;
     display: flex;
     align-items: center;
+    
 }
