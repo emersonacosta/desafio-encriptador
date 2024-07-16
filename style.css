@@ -94,7 +94,7 @@ input[type="text"]:focus {
 }
 
 .right-column {
-    margin: 20px;
+   
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -104,7 +104,7 @@ input[type="text"]:focus {
     border-radius: 32px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    width: 20%; /* Reducido a la mitad y ajustado el margen */
+     /* Reducido a la mitad y ajustado el margen */
 }
 
 .right-column img {
