@@ -88,12 +88,13 @@ input[type="text"]:focus {
 }
 
 .right-column {
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;    
     width: 400px;
-    height: 908px;
+    height: 750px;
     background-color: #FFFFFF;
     border-radius: 32px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
