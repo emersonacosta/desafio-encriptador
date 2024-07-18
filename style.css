@@ -15,18 +15,26 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 120px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto;
+}
+
 .container {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
-    justify-content:  space-between;
-    background-color: #F3F5FC;
+    justify-content: space-between;
+    background-color: #bfe7f7;
     padding: 20px;
 }
 
 .left-column, .right-column {
     flex: 1;
-    margin: 20px;
+    margin: 80px;
     min-width: 300px; 
 } 
 
@@ -34,8 +42,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* Full height to position elements at the bottom */
-    
+    height: auto; /* Full height to position elements at the bottom */
 }
 
 input[type="text"] {
@@ -61,7 +68,7 @@ input[type="text"]:focus {
 
 .parrafo {
     color: black;
-    margin-bottom: 20px; /* Adjust margin */
+    margin-bottom: 50px; /* Adjust margin */
     font-size: 1rem; /* Adjust font size */
 }
 
@@ -72,7 +79,7 @@ input[type="text"]:focus {
     margin-top: auto; /* Push buttons to the bottom */
 }
 
-.boton1, .boton2 {    
+.boton1, .boton2, .copiar {    
     border-radius: 24px;
     width: 100%;
     max-width: 328px;
@@ -97,6 +104,23 @@ input[type="text"]:focus {
 }
 
 .boton2:hover {
+    background: #b3bfc9;
+}
+
+.copiar {
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;  
+    border-radius: 24px;
+    width: 100%;
+    max-width: 328px;
+    height: 67px;
+    font-size: 1rem; /* Adjust font size */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.copiar:hover {
     background: #b3bfc9;
 }
 
@@ -143,22 +167,6 @@ h2 {
     margin: 20px 0;
 }
 
-.copiar {
-    background: #D8DFE8;
-    color: #0A3871;
-    border: 1px solid #0A3871;  
-    border-radius: 24px;
-    width: 200px;
-    height: 50px;
-    font-size: 1rem; /* Adjust font size */
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.copiar:hover {
-    background: #b3bfc9;
-}
-
 .footer {
     background-color: #D8DFE8;
     padding: 20px;
@@ -166,10 +174,15 @@ h2 {
     text-align: center;
     font-size: 1.25rem; /* Adjust font size */
     margin-top: auto;
+    font-weight: bold;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
+    .logo {
+        width: 100px; /* Ajusta el tamaño del logo para pantallas más pequeñas */
+    }
+
     h1 {
         font-size: 1.5rem;
     }
@@ -182,13 +195,21 @@ h2 {
         font-size: 1.25rem;
     }
 
-    .boton1, .boton2 {
+    .boton1, .boton2, .copiar {
         font-size: 0.875rem;
         height: 60px;
     }
 }
 
 @media (max-width: 768px) {
+    .logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 10px auto;
+        display: block;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
@@ -212,7 +233,7 @@ h2 {
         font-size: 1rem;
     }
 
-    .boton1, .boton2 {
+    .boton1, .boton2, .copiar {
         font-size: 0.75rem;
         height: 55px;
     }
@@ -224,6 +245,10 @@ h2 {
 }
 
 @media (max-width: 480px) {
+    .logo {
+        width: 80px; /* Ajusta el tamaño del logo para pantallas más pequeñas */
+    }
+
     h1 {
         font-size: 1rem;
     }
@@ -236,7 +261,7 @@ h2 {
         font-size: 0.875rem;
     }
 
-    .boton1, .boton2 {
+    .boton1, .boton2, .copiar {
         font-size: 0.625rem;
         height: 50px;
     }
