@@ -46,6 +46,12 @@ body {
     height: auto; 
 }
 
+.label{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+
+}
+
 input[type="text"] {
     margin-bottom: 20px;
     width: 100%;
