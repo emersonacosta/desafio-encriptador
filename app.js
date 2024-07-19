@@ -1,4 +1,3 @@
-
 function encriptar() {
     const inputTexto = document.querySelector('input[type="text"]').value;
     const textoEncriptado = inputTexto
@@ -40,7 +39,7 @@ function copiarAlPortapapeles(texto) {
     input.select();
     document.execCommand('copy');
     document.body.removeChild(input);
-    alert('Texto copiado al portapapeles');
+    // No alert message
 }
 
 document.querySelector('.boton1').addEventListener('click', encriptar);
